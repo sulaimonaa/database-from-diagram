@@ -8,7 +8,6 @@
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 world-info project](#-capstone-react)
   - [🛠 Built With ](#-built-with-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
