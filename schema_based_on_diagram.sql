@@ -1,4 +1,3 @@
-
 CREATE DATABASE clinic;
 CREATE TABLE patients (
     id SERIAL PRIMARY KEY,
@@ -38,6 +37,6 @@ ADD COLUMN treatment_id INT REFERENCES treatments(id);
 CREATE INDEX idx_patients ON medical_histories(patient_id ASC);
 CREATE INDEX idx_medical_history_id ON invoices(medical_history_id ASC);
 CREATE INDEX idx_invoices ON invoices(id ASC);
-CREATE INDEX idx_treatment_medical_history ON treatement_medical_history(medical_history_id ASC);
+CREATE INDEX idx_treatment_medical_history ON treatment_medical_history(medical_history_id ASC);
 CREATE INDEX idx_treatment_id ON invoice_items(treatment_id ASC);
-
+CREATE INDEX idx_medical_histories_has_treatments ON treatement_medical_history(treatments_id ASC);
