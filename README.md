@@ -61,12 +61,6 @@ In this project, I am using a relational database to create the initial data str
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
--[COMING SOON]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 - Create a local directory that you want to clone the repository.
