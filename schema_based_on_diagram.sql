@@ -33,8 +33,8 @@ CREATE TABLE invoice_items (
 );
 ALTER TABLE medical_histories
 ADD COLUMN treatment_id INT REFERENCES treatments(id);
-CREATE INDEX idx_patients ON patients(id ASC);
-CREATE INDEX idx_medical_histories ON medical_histories(id ASC);
+CREATE INDEX idx_patients ON medical_histories(patient_id ASC);
+CREATE INDEX idx_medical_history_id ON invoices(medical_history_id ASC);
 CREATE INDEX idx_invoices ON invoices(id ASC);
-CREATE INDEX idx_treatments ON treatments(id ASC);
-CREATE INDEX idx_invoice_items ON invoice_items(id ASC);
+CREATE INDEX idx_treatment_medical_history ON treatement_medical_history(medical_history_id ASC);
+CREATE INDEX idx_treatment_id ON invoice_items(treatment_id ASC);
